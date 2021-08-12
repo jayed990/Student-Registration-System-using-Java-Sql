@@ -51,7 +51,7 @@ public class search extends javax.swing.JFrame {
         name = new javax.swing.JTextField();
         id = new javax.swing.JTextField();
         cls = new javax.swing.JTextField();
-        father = new javax.swing.JTextField();
+        course = new javax.swing.JTextField();
         phone = new javax.swing.JTextField();
         address = new javax.swing.JTextField();
         b5 = new javax.swing.JLabel();
@@ -91,7 +91,7 @@ public class search extends javax.swing.JFrame {
         b1.setText("Name");
 
         b3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        b3.setText("Father");
+        b3.setText("Courses");
 
         b0.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         b0.setText("ID");
@@ -123,6 +123,12 @@ public class search extends javax.swing.JFrame {
             }
         });
 
+        course.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                courseActionPerformed(evt);
+            }
+        });
+
         b5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         b5.setText("Blood");
 
@@ -147,40 +153,41 @@ public class search extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton4))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGap(121, 121, 121)
+                                .addComponent(jButton3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1)
+                                .addGap(19, 19, 19)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton4))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(121, 121, 121)
-                            .addComponent(jButton3)
-                            .addGap(18, 18, 18)
+                            .addGap(117, 117, 117)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(cls, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(name, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(father, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(phone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
-                                    .addComponent(address, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(blood, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jButton1)
-                                    .addGap(19, 19, 19)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(b0)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(b3)
+                                    .addComponent(b4)
+                                    .addComponent(b2)
+                                    .addComponent(b6)
+                                    .addComponent(b5)
+                                    .addComponent(b1)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(b0)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(b3)
-                                .addComponent(b4)
-                                .addComponent(b2)
-                                .addComponent(b6)
-                                .addComponent(b5)
-                                .addComponent(b1)))))
+                        .addGap(57, 57, 57)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(cls, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(name, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(course, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(phone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                            .addComponent(address, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(blood, javax.swing.GroupLayout.Alignment.LEADING))))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -202,7 +209,7 @@ public class search extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(b3)
-                    .addComponent(father, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(course, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(b4)
@@ -282,12 +289,12 @@ public class search extends javax.swing.JFrame {
             String SName = name.getText();
             int SID = Integer.parseInt(id.getText());
             int SClass = Integer.parseInt(cls.getText());
-            String SFather = father.getText();
+            String SCourses = course.getText();
             String SPhone = phone.getText();
             String SBlood = blood.getText();
             String SAddress = address.getText();
 
-            String sql = "UPDATE `student` SET `Name`='"+SName+"',`ID`='"+SID+"',`Class`='"+SClass+"',`Father`='"+SFather+"',`Phone`='"+SPhone+"',`Blood`='"+SBlood+"',`Address`='"+SAddress+"' WHERE id = '"+SID+"'";
+            String sql = "UPDATE `student` SET `Name`='"+SName+"',`ID`='"+SID+"',`Class`='"+SClass+"',`Courses`='"+SCourses+"',`Phone`='"+SPhone+"',`Blood`='"+SBlood+"',`Address`='"+SAddress+"' WHERE id = '"+SID+"'";
             
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Data Updated!!");
@@ -348,7 +355,7 @@ public class search extends javax.swing.JFrame {
         
         if (rs.next()){
             name.setText(rs.getString("name"));
-            father.setText(rs.getString("father"));
+            course.setText(rs.getString("courses"));
             phone.setText(rs.getString("phone"));
             address.setText(rs.getString("address"));
             cls.setText(String.format("%s",rs.getInt("class")));
@@ -366,6 +373,10 @@ public class search extends javax.swing.JFrame {
     private void clsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_clsActionPerformed
+
+    private void courseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_courseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_courseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -413,7 +424,7 @@ public class search extends javax.swing.JFrame {
     private javax.swing.JLabel b6;
     private javax.swing.JTextField blood;
     private javax.swing.JTextField cls;
-    private javax.swing.JTextField father;
+    private javax.swing.JTextField course;
     private javax.swing.JTextField id;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -52,7 +52,7 @@ public class add extends javax.swing.JFrame {
         name = new javax.swing.JTextField();
         id = new javax.swing.JTextField();
         cls = new javax.swing.JTextField();
-        father = new javax.swing.JTextField();
+        course = new javax.swing.JTextField();
         phone = new javax.swing.JTextField();
         Blood = new javax.swing.JLabel();
         blood = new javax.swing.JComboBox<>();
@@ -95,7 +95,7 @@ public class add extends javax.swing.JFrame {
         Name.setText("Name");
 
         Father.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Father.setText("Father");
+        Father.setText("Courses");
 
         ID.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ID.setText("ID");
@@ -118,6 +118,12 @@ public class add extends javax.swing.JFrame {
         id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idActionPerformed(evt);
+            }
+        });
+
+        course.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                courseActionPerformed(evt);
             }
         });
 
@@ -157,12 +163,11 @@ public class add extends javax.swing.JFrame {
                                 .addComponent(id)
                                 .addComponent(cls)
                                 .addComponent(name)
-                                .addComponent(father)
+                                .addComponent(course)
                                 .addComponent(phone, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(blood, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)
                         .addGap(19, 19, 19)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -186,7 +191,7 @@ public class add extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Father)
-                    .addComponent(father, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(course, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Phone)
@@ -284,13 +289,13 @@ public class add extends javax.swing.JFrame {
             String SName = name.getText();
             int SID = Integer.parseInt(id.getText());
             int SClass = Integer.parseInt(cls.getText());
-            String SFather = father.getText();
+            String SCourses = course.getText();
             String SPhone = phone.getText();
             String SBlood = (String) blood.getSelectedItem();
             String SAddress = address.getText();        
             
             
-            String sql = "INSERT INTO student (`Name`, `ID`, `Class`, `Father`, `Phone`, `Blood`, `Address`) VALUES ('"+SName+"','"+SID+"','"+SClass+"','"+SFather+"','"+SPhone+"','"+SBlood+"','"+SAddress+"' )" ;
+            String sql = "INSERT INTO student (`Name`, `ID`, `Class`, `Courses`, `Phone`, `Blood`, `Address`) VALUES ('"+SName+"','"+SID+"','"+SClass+"','"+SCourses+"','"+SPhone+"','"+SBlood+"','"+SAddress+"' )" ;
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Data Uploaded");
             
@@ -307,6 +312,10 @@ public class add extends javax.swing.JFrame {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void courseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_courseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_courseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -355,7 +364,7 @@ public class add extends javax.swing.JFrame {
     private javax.swing.JTextArea address;
     private javax.swing.JComboBox<String> blood;
     private javax.swing.JTextField cls;
-    private javax.swing.JTextField father;
+    private javax.swing.JTextField course;
     private javax.swing.JTextField id;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
