@@ -53,6 +53,7 @@ public class home extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -63,7 +64,7 @@ public class home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Home", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
 
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jayed\\Documents\\NetBeansProjects\\student\\src\\project Image\\showStudent.png")); // NOI18N
@@ -176,8 +177,7 @@ public class home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(355, 355, 355)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel10))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel12)
@@ -288,6 +288,14 @@ public class home extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem5);
 
+        jMenuItem6.setText("GALLERY");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem6);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -379,6 +387,13 @@ public class home extends javax.swing.JFrame {
         object.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        GALLERY object = new GALLERY();
+        object.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -441,6 +456,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

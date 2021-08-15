@@ -58,7 +58,7 @@ public class admin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Add An Admin", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 3, 18))); // NOI18N
 
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jayed\\Documents\\NetBeansProjects\\student\\src\\project Image\\submit.png")); // NOI18N
