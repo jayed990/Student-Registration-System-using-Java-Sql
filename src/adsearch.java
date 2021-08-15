@@ -22,7 +22,7 @@ public class adsearch extends javax.swing.JFrame {
     ResultSet rs = null;
     
     public adsearch() {
-        super("adsearch");
+        super("ADMIN: SEARCH / EDIT / DELETE");
         conn = dbcon.connection();
         initComponents();
     }

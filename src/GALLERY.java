@@ -23,7 +23,7 @@ public class GALLERY extends javax.swing.JFrame {
     ResultSet rs = null;
     
     public GALLERY() {
-        super("GAL");
+        super("GALLERY");
         initComponents();
         conn = dbcon.connection();
     }

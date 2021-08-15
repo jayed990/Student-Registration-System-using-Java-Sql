@@ -18,14 +18,14 @@ import net.proteanit.sql.DbUtils;
 public class alist extends javax.swing.JFrame {
 
     /**
-     * Creates new form alist
+     * Creates new form a list
      */
     Connection conn = null;
     Statement stmt =  null;
     ResultSet rs = null;
     
     public alist() {
-        super("Admin List");
+        super("ADMIN PANEL");
         initComponents();
         conn = dbcon.connection();
         showRecord();

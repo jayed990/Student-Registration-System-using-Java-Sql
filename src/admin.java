@@ -23,7 +23,7 @@ public class admin extends javax.swing.JFrame {
     ResultSet rs = null;
     
     public admin() {
-        super("Admin");
+        super("ADD ADMIN");
         initComponents();
         conn = dbcon.connection();
     }

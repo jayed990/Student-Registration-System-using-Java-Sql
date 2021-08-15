@@ -24,7 +24,7 @@ public class add extends javax.swing.JFrame {
     ResultSet rs = null;
     
     public add() {
-        super("Add");
+        super("ADDMISSION");
         initComponents();
         conn = dbcon.connection();
     }

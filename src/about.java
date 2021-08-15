@@ -14,6 +14,7 @@ public class about extends javax.swing.JFrame {
      * Creates new form about
      */
     public about() {
+        super("ABOUT US");
         initComponents();
     }
 

@@ -25,7 +25,7 @@ public class slist extends javax.swing.JFrame {
     ResultSet rs = null;
     
     public slist() {
-        super("Student");
+        super("STUDENT LIST");
         initComponents();
         conn = dbcon.connection();
         showRecord();

@@ -29,7 +29,7 @@ public class login extends javax.swing.JFrame
     
     public login() 
     {
-        super("Login");
+        super("LOGIN");
         initComponents();
         conn = dbcon.connection();
     }

@@ -25,7 +25,7 @@ public class search extends javax.swing.JFrame {
     
     public search() 
     {
-        super("search");
+        super("STUDENT: SEARCH / EDIT / DELETE");
         conn = dbcon.connection();
         initComponents();
     }
