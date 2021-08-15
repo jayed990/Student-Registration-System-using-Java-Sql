@@ -49,17 +49,17 @@ public class about extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("PROJECT COLLABORATORS:");
 
-        jLabel4.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("1. Jayed Bin Jahangir - CSE 06407566");
+        jLabel4.setText("1. Jayed Bin Jahangir    - CSE 06407566");
 
-        jLabel5.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("2. Habiba Akter         - CSE 06007190");
+        jLabel5.setText("2. Habiba Akter              - CSE 06007190");
 
-        jLabel6.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("3. Fajle Rabbi            - CSE 06407564");
+        jLabel6.setText("3. Fajle Rabbi                  - CSE 06407564");
 
         jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\jayed\\Documents\\NetBeansProjects\\student\\src\\project Image\\about1.png")); // NOI18N
         jLabel10.setText("jLabel10");
@@ -85,8 +85,7 @@ public class about extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(37, 37, 37)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(78, 78, 78))
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel2)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(53, 53, 53)

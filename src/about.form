@@ -56,7 +56,6 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                                   <Component id="jLabel10" min="-2" pref="298" max="-2" attributes="0"/>
-                                  <EmptySpace min="78" pref="78" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
@@ -134,34 +133,34 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="1"/>
+              <Font name="Calibri" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="1. Jayed Bin Jahangir - CSE 06407566"/>
+            <Property name="text" type="java.lang.String" value="1. Jayed Bin Jahangir    - CSE 06407566"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="1"/>
+              <Font name="Calibri" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="2. Habiba Akter         - CSE 06007190"/>
+            <Property name="text" type="java.lang.String" value="2. Habiba Akter              - CSE 06007190"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="1"/>
+              <Font name="Calibri" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="3. Fajle Rabbi            - CSE 06407564"/>
+            <Property name="text" type="java.lang.String" value="3. Fajle Rabbi                  - CSE 06407564"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
