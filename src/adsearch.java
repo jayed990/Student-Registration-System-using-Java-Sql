@@ -249,6 +249,9 @@ public class adsearch extends javax.swing.JFrame {
 
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Data Updated!!");
+        setVisible(false);
+        alist object = new alist();
+        object.setVisible(true);
 
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
@@ -284,6 +287,9 @@ public class adsearch extends javax.swing.JFrame {
             stmt.executeUpdate(sql);
 
             JOptionPane.showMessageDialog(null, "Data Deleted!!");
+        setVisible(false);
+        alist object = new alist();
+        object.setVisible(true);
 
         }catch(Exception e) {
             JOptionPane.showMessageDialog(null, e);

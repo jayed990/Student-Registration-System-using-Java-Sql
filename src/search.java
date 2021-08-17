@@ -298,6 +298,9 @@ public class search extends javax.swing.JFrame {
             
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Data Updated!!");
+        setVisible(false);
+        slist object = new slist();
+        object.setVisible(true);
 
         }catch(Exception e){
 
@@ -338,6 +341,9 @@ public class search extends javax.swing.JFrame {
         stmt.executeUpdate(sql);
         
         JOptionPane.showMessageDialog(null, "Data Deleted!!");
+        setVisible(false);
+        slist object = new slist();
+        object.setVisible(true);
         
         }catch(Exception e) {
             JOptionPane.showMessageDialog(null, e);

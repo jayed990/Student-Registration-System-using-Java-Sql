@@ -298,6 +298,9 @@ public class add extends javax.swing.JFrame {
             String sql = "INSERT INTO student (`Name`, `ID`, `Class`, `Courses`, `Phone`, `Blood`, `Address`) VALUES ('"+SName+"','"+SID+"','"+SClass+"','"+SCourses+"','"+SPhone+"','"+SBlood+"','"+SAddress+"' )" ;
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Data Uploaded");
+        setVisible(false);
+        slist object = new slist();
+        object.setVisible(true);
             
         }catch(Exception e){
            

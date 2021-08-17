@@ -221,6 +221,9 @@ public class admin extends javax.swing.JFrame {
             String sql = "INSERT INTO `admin`(`Name`, `ID`, `pwd`, `Mail`) VALUES ('"+SName+"','"+SID+"','"+SPwd+"','"+SMail+"')" ;
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "Data Uploaded");
+        setVisible(false);
+        alist object = new alist();
+        object.setVisible(true);
 
         }catch(Exception e){
 
