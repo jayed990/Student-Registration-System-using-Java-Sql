@@ -15,7 +15,7 @@ import net.proteanit.sql.DbUtils;
  *
  * @author jayed
  */
-public class slist extends javax.swing.JFrame {
+public final class slist extends javax.swing.JFrame {
 
     /**
      * Creates new form slist
@@ -34,7 +34,7 @@ public class slist extends javax.swing.JFrame {
     public void showRecord(){
     try{
         stmt = conn.createStatement();
-        String sql = "Select * FROM STUDENT";
+        String sql = "Select * FROM student";
         ResultSet res = stmt.executeQuery(sql);
         Table.setModel(DbUtils.resultSetToTableModel(res));
         

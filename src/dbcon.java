@@ -15,11 +15,17 @@ import javax.swing.JOptionPane;
  */
 public class dbcon 
 {
+    ///////////////local
     final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    final static String DB_URL = "jdbc:mysql://localhost:3306/student";
+    //final static String DB_URL = "jdbc:mysql://localhost:3306/student";
+    //final static String USER = "root";
+    //final static String PASS = "";
     
-    final static String USER = "root";
-    final static String PASS = "";
+    ///////////////web
+    final static String DB_URL = "jdbc:mysql://sql6.freesqldatabase.com:3306/sql6431775";
+    final static String USER = "sql6431775";
+    final static String PASS = "EDiQgulrBD";
+
  
 
 public static Connection connection()
