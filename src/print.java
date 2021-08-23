@@ -122,7 +122,7 @@ public class print extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        ppanel.setBackground(new java.awt.Color(255, 255, 255));
+        ppanel.setBackground(new java.awt.Color(0, 204, 255));
         ppanel.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
         b1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -377,7 +377,7 @@ public class print extends javax.swing.JFrame {
                 
                 graphics2D.translate(pageFormat.getImageableX()*2, pageFormat.getImageableY()*2);
                 
-                graphics2D.scale(1, 1);
+                graphics2D.scale(1.2, 1.2);
                 panel.paint(graphics2D);
                 return Printable.PAGE_EXISTS;
               
