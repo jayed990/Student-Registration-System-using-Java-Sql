@@ -152,6 +152,7 @@ public class login extends javax.swing.JFrame
         stmt = conn.createStatement();
         String userid = id.getText();
         String userpwd = pwd.getText();
+         
         
         String sql = "Select * FROM admin WHERE ID = '"+userid+"'&& pwd = '"+userpwd+"'";
         rs = stmt.executeQuery(sql);
